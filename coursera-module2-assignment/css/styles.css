@@ -1,0 +1,69 @@
+/* Universal selector (to set the box-sizing) */
+* {
+	font-family: "Courrier New", Courrier, monospace;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* General styles */
+
+h1 {
+	font-size: 175%;
+	text-align: center;
+	margin: 30px;
+}
+
+p {
+	color: #000000;
+	padding: 15px;
+	/* Push text by div.title heigth (25px) + normal padding (15px) */
+	padding-top: 40px;
+}
+
+section {
+	background-color: #C1D3FF;
+	border: 1px solid black;
+	margin: 15px;
+}
+
+section > div.title {
+	background-color: #BABABA;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	float: right;
+	height: 25px;
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 125%;
+}
+
+/*** Responsive framework ***/
+/* Fill parent width */
+.row {
+	width: 100%;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+	.col-desktop-third {
+		float: left;
+		/* remove the margin size from the width */
+		width: calc(33.33% - 30px);
+	}
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tablet-full, .col-tablet-half {
+		float: left;
+	}
+	
+	.col-tablet-half {
+		/* remove the margin size from the width */
+		width: calc(50% - 30px);
+	}
+}
+
+/* Mobile view is how the div already works*/
