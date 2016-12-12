@@ -1,0 +1,40 @@
+/* Universal styles */
+body {
+	font-family: "Courrier New", Courrier, monospace;
+}
+
+/* Make sure the list covers the entire collapsable navbar */
+#nav-section-list {
+	background-color: #42f483;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Set a bigger font and borders */
+#nav-section-list li {
+	font-size: 1.3em;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+
+/* Set the final bottom border */
+#nav-section-list li:nth-child(3) {
+	border-bottom: 1px solid #000000;
+}
+
+/* Set the same color as the navbar background */
+#main-navigation li:hover {
+	background-color: #e7e7e7;
+}
+
+/* Set the same size for margins */
+h1 {
+	margin-bottom: 40px;
+}
+
+/* Section is forced to be tall */
+section {
+	background-color: #42c8f4;
+	height: 1000px;
+}
