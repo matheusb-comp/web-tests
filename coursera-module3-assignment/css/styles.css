@@ -5,7 +5,7 @@ body {
 
 /* Make sure the list covers the entire collapsable navbar */
 #nav-section-list {
-	background-color: #42f483;
+	background-color: #9db7e0;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -28,6 +28,11 @@ body {
 	background-color: #e7e7e7;
 }
 
+/* Make all links black (navigation and 'back to top') */
+a {
+	color: #000000;
+}
+
 /* Set the same size for margins */
 h1 {
 	margin-bottom: 40px;
@@ -35,6 +40,7 @@ h1 {
 
 /* Section is forced to be tall */
 section {
-	background-color: #42c8f4;
-	height: 1000px;
+	background-color: #bbd3f9;
+	height: 700px;
+	margin-bottom: 30px;
 }
